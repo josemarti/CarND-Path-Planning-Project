@@ -30,7 +30,7 @@ The car is able to change lanes
 
 ## Reflection
 
-Udacity provides some starting coding and this has been also complemented with the code from the course’s Quizzes.
+Udacity provides some starting code and this has been also complemented with the code from the course’s Quizzes.
 All the coding has been done in the "main.cpp" file. Additionally, the header file "spline.h" has been added.
 
 ### 1) Prediction and trajectory
