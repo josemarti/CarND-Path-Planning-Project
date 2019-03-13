@@ -14,6 +14,7 @@ The code compiles correctly.
 ## Valid Trajectories 
 
 The car is able to drive at least 4.32 miles without incident..
+![pic](snap.png)
 
 The car drives according to the speed limit.
 
@@ -29,11 +30,26 @@ The car is able to change lanes
 ## Reflection
 
 Udacity provides some starting coding and this has been also complemented with the code from the course’s Quizzes.
+All the coding has been done in the "main.cpp" file. Additionally the header file "spline.h" has been added.
 
-Prediction and trajectory
+### 1) Prediction and trajectory
 
+In this first part of my code, taking the info from the simulator, the lane position of every car is calculated along with the expected location after the planned trajectory. The safety distance is 30 meters. This isformation is used to decide if the car has to accelerate, deccelerate or change lane.
 
+### 2) Trajectory
 
+The next part of the code compute the trajectory of the vehicle based on the previous decision, vehicle's position and previous path points.
+
+The spline calculation of the trajectory is done with the last points of the previous trajectory along with the farther points. Thee values have to be transformed to local car coordinates.
+In order to make the car accelerations smother and able to quickly react to changing evironment at the end we adjust the speed based on "spd_offset" on every point.
+
+## Conclusion
+
+This project is probably the most complex I have done so far in the Self driving Car Nanodegree. 
+Course lessons are complete and they accomplish the educational purpose of understanding the algorithms. However, once you try to translate this knowledge in to a piece of code things turn out to be a bit more difficult.
+The good thing is that the Quizzes and the Udacity walkthrough are very helpful (and key) to successfully accomplish this project.
+
+J.C. Marti
 
 
 
