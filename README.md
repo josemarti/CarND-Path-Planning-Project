@@ -1,17 +1,17 @@
 # CarND-Path-Planning-Project - Jose C. Marti
 ## Self-Driving Car Engineer Nanodegree Program.
 
-##Overview
+## Overview
 
 This is the 1st  project of the Term 3. In this project have to write an algorithm that allows a vehicle to drive safely in a higway with additional traffic. Udacity provides the simulator that connects with the program sending telemetry information.
 The car should try to go as close as possible to the 50 MPH speed limit, which means passing slower traffic when possible, note that other cars will try to change lanes too. 
-The car should avoid hitting other cars at all cost as well as driving inside of the marked road lanes at all times, unless going from one lane to another. Udacity provides some starting coding and this has been also complemented with the code from the course’s Quizzes.
+The car should avoid hitting other cars at all cost as well as driving inside of the marked road lanes at all times, unless going from one lane to another. 
 
-##Compilation 
+## Compilation 
 
 The code compiles correctly.
 
-##Valid Trajectories 
+## Valid Trajectories 
 
 The car is able to drive at least 4.32 miles without incident..
 
@@ -26,10 +26,11 @@ The car stays in its lane, except for the time between changing lanes.
 The car is able to change lanes
 
 
-##Reflection
+## Reflection
 
+Udacity provides some starting coding and this has been also complemented with the code from the course’s Quizzes.
 
-
+Prediction and trajectory
 
 
 
