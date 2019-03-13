@@ -3,9 +3,8 @@
 
 ## Overview
 
-This is the 1st  project of the Term 3. In this project have to write an algorithm that allows a vehicle to drive safely in a higway with additional traffic. Udacity provides the simulator that connects with the program sending telemetry information.
-The car should try to go as close as possible to the 50 MPH speed limit, which means passing slower traffic when possible, note that other cars will try to change lanes too. 
-The car should avoid hitting other cars at all cost as well as driving inside of the marked road lanes at all times, unless going from one lane to another. 
+This is the 1st  project of the Term 3. In this project we have to write an algorithm that allows a vehicle to drive safely in a highway with additional traffic. Udacity provides the simulator that connects with the program sending telemetry information.
+The car should try to go as close as possible to the 50 MPH speed limit, which means passing slower traffic when possible and taking into account that other cars will also try to change lanes. The car should avoid hitting other cars at all cost as well as driving inside of the marked road lanes at all times, unless going from one lane to another. 
 
 ## Compilation 
 
@@ -13,7 +12,9 @@ The code compiles correctly.
 
 ## Valid Trajectories 
 
-The car is able to drive at least 4.32 miles without incident..
+The car is able to drive at least 4.32 miles without incident.
+As an example you can see a drive of more that 7 miles.
+
 ![pic](snap.png)
 
 The car drives according to the speed limit.
@@ -30,18 +31,18 @@ The car is able to change lanes
 ## Reflection
 
 Udacity provides some starting coding and this has been also complemented with the code from the course’s Quizzes.
-All the coding has been done in the "main.cpp" file. Additionally the header file "spline.h" has been added.
+All the coding has been done in the "main.cpp" file. Additionally, the header file "spline.h" has been added.
 
 ### 1) Prediction and trajectory
 
-In this first part of my code, taking the info from the simulator, the lane position of every car is calculated along with the expected location after the planned trajectory. The safety distance is 30 meters. This isformation is used to decide if the car has to accelerate, deccelerate or change lane.
+In this first part of my code, taking into account the info from the simulator, the lane position of every car is calculated along with the expected location after the planned trajectory. The safety distance is 30 meters. This information is used to decide if the car has to accelerate, decelerate or change lane.
 
 ### 2) Trajectory
 
-The next part of the code compute the trajectory of the vehicle based on the previous decision, vehicle's position and previous path points.
+The next part of the code computes the trajectory of the vehicle based on the previous decision, vehicle's position and previous path points.
 
-The spline calculation of the trajectory is done with the last points of the previous trajectory along with the farther points. Thee values have to be transformed to local car coordinates.
-In order to make the car accelerations smother and able to quickly react to changing evironment at the end we adjust the speed based on "spd_offset" on every point.
+The spline calculation of the trajectory is done with the last points of the previous trajectory along with the farther points. The values have to be transformed to local car coordinates.
+In order to make the car accelerations smother and able to quickly react to changing environment at the end we adjust the speed based on "spd_offset" on every point.
 
 ## Conclusion
 
