@@ -35,7 +35,7 @@ All the coding has been done in the "main.cpp" file. Additionally, the header fi
 
 ### 1) Prediction and trajectory
 
-In this first part of my code, taking into account the info from the simulator, the lane position of every car is calculated along with the expected location after the planned trajectory. The safety distance is 30 meters. This information is used to decide if the car has to accelerate, decelerate or change lane.
+In this first part of the code, taking into account the info from the simulator, the lane position of every car is calculated along with the expected location after the planned trajectory. The safety distance is 30 meters. This information is used to decide if the car has to accelerate, decelerate or change lane.
 
 ### 2) Trajectory
 
@@ -46,7 +46,6 @@ In order to make the car accelerations smother and able to quickly react to chan
 
 ## Conclusion
 
-This project is probably the most complex I have done so far in the Self driving Car Nanodegree. 
 Course lessons are complete and they accomplish the educational purpose of understanding the algorithms. However, once you try to translate this knowledge in to a piece of code things turn out to be a bit more difficult.
 The good thing is that the Quizzes and the Udacity walkthrough are very helpful (and key) to successfully accomplish this project.
 
